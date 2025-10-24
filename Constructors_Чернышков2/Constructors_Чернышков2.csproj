@@ -9,8 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Elements\" />
+    <None Remove="Elements\ic_user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Elements\ic_user.png" />
   </ItemGroup>
 
 </Project>
