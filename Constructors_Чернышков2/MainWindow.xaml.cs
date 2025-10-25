@@ -11,9 +11,7 @@ using System.Windows.Shapes;
 
 namespace Constructors_Чернышков2
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+ 
     public partial class MainWindow : Window
     {
         public List<Classes.Student> AllStudent = Classes.RepoStudents.AllStudent();
@@ -44,6 +42,14 @@ namespace Constructors_Чернышков2
             {
                 CreateStudent(Step, Count);
             }
+        }
+
+        private void knopkaSohr_Click(object sender, EventArgs e) 
+        {
+            string Json = System.Text.Json.JsonSerializer.Serialize(AllStudent);
+            System.IO.File.WriteAllText("студенты.Json", Json);
+            
+        
         }
     }
 }

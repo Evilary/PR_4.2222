@@ -8,11 +8,12 @@ namespace Constructors_Чернышков2.Classes
 {
     public class Student
     {
-        public string Firstname = "";
-        public string Lastname = "";
-        public string Surname = "";
-        public bool Schoolarship = false;
-        public int Course = 4;
+        public string Firstname { get; set; } = "";
+        public string Lastname { get; set; } = "";
+        public string Surname { get; set; } = "";
+        public bool Schoolarship { get; set; } = false;
+        public int Course { get; set; } = 4;
+        public Student() { }
 
         public Student(string Firstname, string Lastname, string Surname)
         {

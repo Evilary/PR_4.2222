@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace Constructors_Чернышков2.Elements
 {
-    /// <summary>
-    /// Логика взаимодействия для Student.xaml
-    /// </summary>
+    
     public partial class Student : UserControl
     {
         public Student(Classes.Student student)
